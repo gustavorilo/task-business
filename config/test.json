@@ -1,0 +1,7 @@
+{
+    "env": "testing",
+    "host": "test.business.com",
+    "protocol": "https",
+    "port": 3051,
+    "name": "businessApi"
+}

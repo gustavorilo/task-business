@@ -1,0 +1,7 @@
+{
+    "env": "development",
+    "host": "dev.business.com",
+    "protocol": "http",
+    "port": 3050,
+    "name": "businessApi"
+}
