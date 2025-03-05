@@ -5,9 +5,9 @@ require('dotenv').config();
 const url = process.env.MONGO_URL;
 const dbName = process.env.MONGO_DATABASE_NAME;
 
-let db = null;
+let db:any = null;
 
-async function connect() {
+export const connect = async () => {
   if (db) {
     return db;
   }
@@ -24,10 +24,4 @@ async function connect() {
     console.error('Error de conexión:', err);
     throw err;
   }
-}
-
-
-
-module.exports = {
-  connect
 }

@@ -21,4 +21,13 @@ Datos de la transferencia: Importe, Id Empresa, Cuenta Débito, Cuenta Crédito
 
 Instrucciones para instalar y ejecutar el proyecto en el entorno local.
 
-.... 
+
+Base de Datos NoSQL (Mongo)
+
+Para leventar la base de datos, ejecutar lo siguiente:
+
+DOCKER MONGODB (ejecutar próxima línea para correr mongo localmente)
+`docker run --name mongo -d -p 27017:27017 mongo:latest`
+
+Para correr el proyecto:
+`npm start`
