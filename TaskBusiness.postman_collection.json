@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "1fcce162-9fc8-43b6-a124-fbb3dc64cfe1",
+		"name": "TaskBusiness",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2649648",
+		"_collection_link": "https://galactic-firefly-839672.postman.co/workspace/Localhost~db29eb59-9a6e-4320-93d2-c1d1c51afbf8/collection/2649648-1fcce162-9fc8-43b6-a124-fbb3dc64cfe1?action=share&source=collection_link&creator=2649648"
+	},
+	"item": [
+		{
+			"name": "getLastMonthlyTransfers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dev.business.com:3010/companies/lastmonthlytransfers",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"business",
+						"com"
+					],
+					"port": "3010",
+					"path": [
+						"companies",
+						"lastmonthlytransfers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getLastMonthlMembers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dev.business.com:3010/companies/lastmonthmembers",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"business",
+						"com"
+					],
+					"port": "3010",
+					"path": [
+						"companies",
+						"lastmonthmembers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addBusiness",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cuit\": \"30578036071\",\n    \"razonSocial\": \"MIRGOR SA C I F I A\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://dev.business.com:3010/companies/add",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"business",
+						"com"
+					],
+					"port": "3010",
+					"path": [
+						"companies",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
